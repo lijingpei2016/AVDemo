@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		160BBA982845262C009C4927 /* JPVideoDemuxerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 160BBA972845262C009C4927 /* JPVideoDemuxerViewController.m */; };
+		160BBA9B284527D2009C4927 /* JPRemuxerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 160BBA9A284527D2009C4927 /* JPRemuxerViewController.m */; };
+		160BBA9F2845284A009C4927 /* JPDemuxerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 160BBA9E2845284A009C4927 /* JPDemuxerConfig.m */; };
+		160BBAA228452884009C4927 /* JPMP4Demuxer.m in Sources */ = {isa = PBXBuildFile; fileRef = 160BBAA128452884009C4927 /* JPMP4Demuxer.m */; };
+		160BBAA528452962009C4927 /* JPVideoDecoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 160BBAA428452962009C4927 /* JPVideoDecoderViewController.m */; };
+		160BBAA9284529F0009C4927 /* JPVideoDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 160BBAA8284529F0009C4927 /* JPVideoDecoder.m */; };
+		160BBABD2846ED4C009C4927 /* JPVideoRenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 160BBABC2846ED4C009C4927 /* JPVideoRenderViewController.m */; };
+		160BBAC12846ED7A009C4927 /* JPMetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 160BBAC02846ED7A009C4927 /* JPMetalView.m */; };
+		160BBAC42846ED9B009C4927 /* render.metal in Sources */ = {isa = PBXBuildFile; fileRef = 160BBAC32846ED9B009C4927 /* render.metal */; };
+		1628D27228119E2C00EDE02B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1628D27128119E2C00EDE02B /* AppDelegate.m */; };
+		1628D27828119E2C00EDE02B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1628D27728119E2C00EDE02B /* ViewController.m */; };
+		1628D27B28119E2C00EDE02B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1628D27928119E2C00EDE02B /* Main.storyboard */; };
+		1628D27D28119E2E00EDE02B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1628D27C28119E2E00EDE02B /* Assets.xcassets */; };
+		1628D28328119E2E00EDE02B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1628D28228119E2E00EDE02B /* main.m */; };
+		1628D28D28119E2F00EDE02B /* AVDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1628D28C28119E2F00EDE02B /* AVDemoTests.m */; };
+		1628D29828119E2F00EDE02B /* AVDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1628D29728119E2F00EDE02B /* AVDemoUITests.m */; };
+		1628D2A728119F1100EDE02B /* JPVideoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1628D2A628119F1100EDE02B /* JPVideoCapture.m */; };
+		1628D2AA28119F4200EDE02B /* JPVideoCaptureConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1628D2A928119F4200EDE02B /* JPVideoCaptureConfig.m */; };
+		1628D2AD2811A0C200EDE02B /* JPVideoCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1628D2AC2811A0C200EDE02B /* JPVideoCaptureViewController.m */; };
+		1628D2B32811AA0C00EDE02B /* JPVideoEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1628D2B22811AA0C00EDE02B /* JPVideoEncoder.m */; };
+		1628D2B62811AA2400EDE02B /* JPVideoEncoderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1628D2B52811AA2400EDE02B /* JPVideoEncoderConfig.m */; };
+		1628D2BA2811AAFB00EDE02B /* JPVideoEncoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1628D2B92811AAFB00EDE02B /* JPVideoEncoderViewController.m */; };
+		1628D2C32811AFB300EDE02B /* JPMuxerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1628D2C22811AFB300EDE02B /* JPMuxerConfig.m */; };
+		1628D2C62811AFF200EDE02B /* JPMP4Muxer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1628D2C52811AFF200EDE02B /* JPMP4Muxer.m */; };
+		1628D2C92811B0F000EDE02B /* JPVideoMuxerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1628D2C82811B0F000EDE02B /* JPVideoMuxerViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1628D28928119E2F00EDE02B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1628D26528119E2C00EDE02B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1628D26C28119E2C00EDE02B;
+			remoteInfo = AVDemo;
+		};
+		1628D29428119E2F00EDE02B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1628D26528119E2C00EDE02B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1628D26C28119E2C00EDE02B;
+			remoteInfo = AVDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		160BBA962845262C009C4927 /* JPVideoDemuxerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPVideoDemuxerViewController.h; sourceTree = "<group>"; };
+		160BBA972845262C009C4927 /* JPVideoDemuxerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPVideoDemuxerViewController.m; sourceTree = "<group>"; };
+		160BBA99284527D2009C4927 /* JPRemuxerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPRemuxerViewController.h; sourceTree = "<group>"; };
+		160BBA9A284527D2009C4927 /* JPRemuxerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPRemuxerViewController.m; sourceTree = "<group>"; };
+		160BBA9D2845284A009C4927 /* JPDemuxerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPDemuxerConfig.h; sourceTree = "<group>"; };
+		160BBA9E2845284A009C4927 /* JPDemuxerConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPDemuxerConfig.m; sourceTree = "<group>"; };
+		160BBAA028452884009C4927 /* JPMP4Demuxer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPMP4Demuxer.h; sourceTree = "<group>"; };
+		160BBAA128452884009C4927 /* JPMP4Demuxer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPMP4Demuxer.m; sourceTree = "<group>"; };
+		160BBAA328452962009C4927 /* JPVideoDecoderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPVideoDecoderViewController.h; sourceTree = "<group>"; };
+		160BBAA428452962009C4927 /* JPVideoDecoderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPVideoDecoderViewController.m; sourceTree = "<group>"; };
+		160BBAA7284529F0009C4927 /* JPVideoDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPVideoDecoder.h; sourceTree = "<group>"; };
+		160BBAA8284529F0009C4927 /* JPVideoDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPVideoDecoder.m; sourceTree = "<group>"; };
+		160BBABB2846ED4C009C4927 /* JPVideoRenderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPVideoRenderViewController.h; sourceTree = "<group>"; };
+		160BBABC2846ED4C009C4927 /* JPVideoRenderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPVideoRenderViewController.m; sourceTree = "<group>"; };
+		160BBABF2846ED7A009C4927 /* JPMetalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPMetalView.h; sourceTree = "<group>"; };
+		160BBAC02846ED7A009C4927 /* JPMetalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPMetalView.m; sourceTree = "<group>"; };
+		160BBAC22846ED8E009C4927 /* JPShaderType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPShaderType.h; sourceTree = "<group>"; };
+		160BBAC32846ED9B009C4927 /* render.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = render.metal; sourceTree = "<group>"; };
+		1628D26D28119E2C00EDE02B /* AVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1628D27028119E2C00EDE02B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1628D27128119E2C00EDE02B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1628D27628119E2C00EDE02B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1628D27728119E2C00EDE02B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1628D27A28119E2C00EDE02B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1628D27C28119E2E00EDE02B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1628D28128119E2E00EDE02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1628D28228119E2E00EDE02B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1628D28828119E2F00EDE02B /* AVDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1628D28C28119E2F00EDE02B /* AVDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVDemoTests.m; sourceTree = "<group>"; };
+		1628D28E28119E2F00EDE02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1628D29328119E2F00EDE02B /* AVDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1628D29728119E2F00EDE02B /* AVDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVDemoUITests.m; sourceTree = "<group>"; };
+		1628D29928119E2F00EDE02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1628D2A528119F1100EDE02B /* JPVideoCapture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPVideoCapture.h; sourceTree = "<group>"; };
+		1628D2A628119F1100EDE02B /* JPVideoCapture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPVideoCapture.m; sourceTree = "<group>"; };
+		1628D2A828119F4200EDE02B /* JPVideoCaptureConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPVideoCaptureConfig.h; sourceTree = "<group>"; };
+		1628D2A928119F4200EDE02B /* JPVideoCaptureConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPVideoCaptureConfig.m; sourceTree = "<group>"; };
+		1628D2AB2811A0C200EDE02B /* JPVideoCaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPVideoCaptureViewController.h; sourceTree = "<group>"; };
+		1628D2AC2811A0C200EDE02B /* JPVideoCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPVideoCaptureViewController.m; sourceTree = "<group>"; };
+		1628D2B12811AA0C00EDE02B /* JPVideoEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPVideoEncoder.h; sourceTree = "<group>"; };
+		1628D2B22811AA0C00EDE02B /* JPVideoEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPVideoEncoder.m; sourceTree = "<group>"; };
+		1628D2B42811AA2400EDE02B /* JPVideoEncoderConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPVideoEncoderConfig.h; sourceTree = "<group>"; };
+		1628D2B52811AA2400EDE02B /* JPVideoEncoderConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPVideoEncoderConfig.m; sourceTree = "<group>"; };
+		1628D2B82811AAFB00EDE02B /* JPVideoEncoderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPVideoEncoderViewController.h; sourceTree = "<group>"; };
+		1628D2B92811AAFB00EDE02B /* JPVideoEncoderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPVideoEncoderViewController.m; sourceTree = "<group>"; };
+		1628D2BD2811AF6400EDE02B /* JPMediaBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPMediaBase.h; sourceTree = "<group>"; };
+		1628D2C12811AFB300EDE02B /* JPMuxerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPMuxerConfig.h; sourceTree = "<group>"; };
+		1628D2C22811AFB300EDE02B /* JPMuxerConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPMuxerConfig.m; sourceTree = "<group>"; };
+		1628D2C42811AFF200EDE02B /* JPMP4Muxer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPMP4Muxer.h; sourceTree = "<group>"; };
+		1628D2C52811AFF200EDE02B /* JPMP4Muxer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPMP4Muxer.m; sourceTree = "<group>"; };
+		1628D2C72811B0F000EDE02B /* JPVideoMuxerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPVideoMuxerViewController.h; sourceTree = "<group>"; };
+		1628D2C82811B0F000EDE02B /* JPVideoMuxerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPVideoMuxerViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1628D26A28119E2C00EDE02B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1628D28528119E2F00EDE02B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1628D29028119E2F00EDE02B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		160BBA9C28452825009C4927 /* Demuxer */ = {
+			isa = PBXGroup;
+			children = (
+				160BBA9D2845284A009C4927 /* JPDemuxerConfig.h */,
+				160BBA9E2845284A009C4927 /* JPDemuxerConfig.m */,
+				160BBAA028452884009C4927 /* JPMP4Demuxer.h */,
+				160BBAA128452884009C4927 /* JPMP4Demuxer.m */,
+			);
+			path = Demuxer;
+			sourceTree = "<group>";
+		};
+		160BBAA6284529BE009C4927 /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				160BBAA7284529F0009C4927 /* JPVideoDecoder.h */,
+				160BBAA8284529F0009C4927 /* JPVideoDecoder.m */,
+			);
+			path = Decoder;
+			sourceTree = "<group>";
+		};
+		160BBABE2846ED5E009C4927 /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				160BBABF2846ED7A009C4927 /* JPMetalView.h */,
+				160BBAC02846ED7A009C4927 /* JPMetalView.m */,
+				160BBAC22846ED8E009C4927 /* JPShaderType.h */,
+				160BBAC32846ED9B009C4927 /* render.metal */,
+			);
+			path = Render;
+			sourceTree = "<group>";
+		};
+		1628D26428119E2C00EDE02B = {
+			isa = PBXGroup;
+			children = (
+				1628D26F28119E2C00EDE02B /* AVDemo */,
+				1628D28B28119E2F00EDE02B /* AVDemoTests */,
+				1628D29628119E2F00EDE02B /* AVDemoUITests */,
+				1628D26E28119E2C00EDE02B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1628D26E28119E2C00EDE02B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1628D26D28119E2C00EDE02B /* AVDemo.app */,
+				1628D28828119E2F00EDE02B /* AVDemoTests.xctest */,
+				1628D29328119E2F00EDE02B /* AVDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1628D26F28119E2C00EDE02B /* AVDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1628D27028119E2C00EDE02B /* AppDelegate.h */,
+				1628D27128119E2C00EDE02B /* AppDelegate.m */,
+				1628D27628119E2C00EDE02B /* ViewController.h */,
+				1628D27728119E2C00EDE02B /* ViewController.m */,
+				1628D2B72811AAE900EDE02B /* VC */,
+				160BBABE2846ED5E009C4927 /* Render */,
+				160BBAA6284529BE009C4927 /* Decoder */,
+				160BBA9C28452825009C4927 /* Demuxer */,
+				1628D2C02811AFA500EDE02B /* Muxer */,
+				1628D2AE2811A9D200EDE02B /* Capture */,
+				1628D2BC2811AF4C00EDE02B /* Base */,
+				1628D2B02811A9F900EDE02B /* Encoder */,
+				1628D27928119E2C00EDE02B /* Main.storyboard */,
+				1628D27C28119E2E00EDE02B /* Assets.xcassets */,
+				1628D28128119E2E00EDE02B /* Info.plist */,
+				1628D28228119E2E00EDE02B /* main.m */,
+			);
+			path = AVDemo;
+			sourceTree = "<group>";
+		};
+		1628D28B28119E2F00EDE02B /* AVDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1628D28C28119E2F00EDE02B /* AVDemoTests.m */,
+				1628D28E28119E2F00EDE02B /* Info.plist */,
+			);
+			path = AVDemoTests;
+			sourceTree = "<group>";
+		};
+		1628D29628119E2F00EDE02B /* AVDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1628D29728119E2F00EDE02B /* AVDemoUITests.m */,
+				1628D29928119E2F00EDE02B /* Info.plist */,
+			);
+			path = AVDemoUITests;
+			sourceTree = "<group>";
+		};
+		1628D2AE2811A9D200EDE02B /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				1628D2A528119F1100EDE02B /* JPVideoCapture.h */,
+				1628D2A628119F1100EDE02B /* JPVideoCapture.m */,
+				1628D2A828119F4200EDE02B /* JPVideoCaptureConfig.h */,
+				1628D2A928119F4200EDE02B /* JPVideoCaptureConfig.m */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		1628D2B02811A9F900EDE02B /* Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				1628D2B12811AA0C00EDE02B /* JPVideoEncoder.h */,
+				1628D2B22811AA0C00EDE02B /* JPVideoEncoder.m */,
+				1628D2B42811AA2400EDE02B /* JPVideoEncoderConfig.h */,
+				1628D2B52811AA2400EDE02B /* JPVideoEncoderConfig.m */,
+			);
+			path = Encoder;
+			sourceTree = "<group>";
+		};
+		1628D2B72811AAE900EDE02B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				1628D2AB2811A0C200EDE02B /* JPVideoCaptureViewController.h */,
+				1628D2AC2811A0C200EDE02B /* JPVideoCaptureViewController.m */,
+				1628D2B82811AAFB00EDE02B /* JPVideoEncoderViewController.h */,
+				1628D2B92811AAFB00EDE02B /* JPVideoEncoderViewController.m */,
+				1628D2C72811B0F000EDE02B /* JPVideoMuxerViewController.h */,
+				1628D2C82811B0F000EDE02B /* JPVideoMuxerViewController.m */,
+				160BBA962845262C009C4927 /* JPVideoDemuxerViewController.h */,
+				160BBA972845262C009C4927 /* JPVideoDemuxerViewController.m */,
+				160BBA99284527D2009C4927 /* JPRemuxerViewController.h */,
+				160BBA9A284527D2009C4927 /* JPRemuxerViewController.m */,
+				160BBAA328452962009C4927 /* JPVideoDecoderViewController.h */,
+				160BBAA428452962009C4927 /* JPVideoDecoderViewController.m */,
+				160BBABB2846ED4C009C4927 /* JPVideoRenderViewController.h */,
+				160BBABC2846ED4C009C4927 /* JPVideoRenderViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		1628D2BC2811AF4C00EDE02B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1628D2BD2811AF6400EDE02B /* JPMediaBase.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1628D2C02811AFA500EDE02B /* Muxer */ = {
+			isa = PBXGroup;
+			children = (
+				1628D2C42811AFF200EDE02B /* JPMP4Muxer.h */,
+				1628D2C52811AFF200EDE02B /* JPMP4Muxer.m */,
+				1628D2C12811AFB300EDE02B /* JPMuxerConfig.h */,
+				1628D2C22811AFB300EDE02B /* JPMuxerConfig.m */,
+			);
+			path = Muxer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1628D26C28119E2C00EDE02B /* AVDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1628D29C28119E2F00EDE02B /* Build configuration list for PBXNativeTarget "AVDemo" */;
+			buildPhases = (
+				1628D26928119E2C00EDE02B /* Sources */,
+				1628D26A28119E2C00EDE02B /* Frameworks */,
+				1628D26B28119E2C00EDE02B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AVDemo;
+			productName = AVDemo;
+			productReference = 1628D26D28119E2C00EDE02B /* AVDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1628D28728119E2F00EDE02B /* AVDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1628D29F28119E2F00EDE02B /* Build configuration list for PBXNativeTarget "AVDemoTests" */;
+			buildPhases = (
+				1628D28428119E2F00EDE02B /* Sources */,
+				1628D28528119E2F00EDE02B /* Frameworks */,
+				1628D28628119E2F00EDE02B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1628D28A28119E2F00EDE02B /* PBXTargetDependency */,
+			);
+			name = AVDemoTests;
+			productName = AVDemoTests;
+			productReference = 1628D28828119E2F00EDE02B /* AVDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1628D29228119E2F00EDE02B /* AVDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1628D2A228119E2F00EDE02B /* Build configuration list for PBXNativeTarget "AVDemoUITests" */;
+			buildPhases = (
+				1628D28F28119E2F00EDE02B /* Sources */,
+				1628D29028119E2F00EDE02B /* Frameworks */,
+				1628D29128119E2F00EDE02B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1628D29528119E2F00EDE02B /* PBXTargetDependency */,
+			);
+			name = AVDemoUITests;
+			productName = AVDemoUITests;
+			productReference = 1628D29328119E2F00EDE02B /* AVDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1628D26528119E2C00EDE02B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					1628D26C28119E2C00EDE02B = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					1628D28728119E2F00EDE02B = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 1628D26C28119E2C00EDE02B;
+					};
+					1628D29228119E2F00EDE02B = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 1628D26C28119E2C00EDE02B;
+					};
+				};
+			};
+			buildConfigurationList = 1628D26828119E2C00EDE02B /* Build configuration list for PBXProject "AVDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1628D26428119E2C00EDE02B;
+			productRefGroup = 1628D26E28119E2C00EDE02B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1628D26C28119E2C00EDE02B /* AVDemo */,
+				1628D28728119E2F00EDE02B /* AVDemoTests */,
+				1628D29228119E2F00EDE02B /* AVDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1628D26B28119E2C00EDE02B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1628D27D28119E2E00EDE02B /* Assets.xcassets in Resources */,
+				1628D27B28119E2C00EDE02B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1628D28628119E2F00EDE02B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1628D29128119E2F00EDE02B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1628D26928119E2C00EDE02B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1628D2C92811B0F000EDE02B /* JPVideoMuxerViewController.m in Sources */,
+				160BBABD2846ED4C009C4927 /* JPVideoRenderViewController.m in Sources */,
+				160BBA9F2845284A009C4927 /* JPDemuxerConfig.m in Sources */,
+				1628D2B62811AA2400EDE02B /* JPVideoEncoderConfig.m in Sources */,
+				1628D2B32811AA0C00EDE02B /* JPVideoEncoder.m in Sources */,
+				1628D2AD2811A0C200EDE02B /* JPVideoCaptureViewController.m in Sources */,
+				1628D2BA2811AAFB00EDE02B /* JPVideoEncoderViewController.m in Sources */,
+				1628D27828119E2C00EDE02B /* ViewController.m in Sources */,
+				1628D27228119E2C00EDE02B /* AppDelegate.m in Sources */,
+				160BBAA528452962009C4927 /* JPVideoDecoderViewController.m in Sources */,
+				1628D2C62811AFF200EDE02B /* JPMP4Muxer.m in Sources */,
+				160BBA982845262C009C4927 /* JPVideoDemuxerViewController.m in Sources */,
+				1628D28328119E2E00EDE02B /* main.m in Sources */,
+				160BBAC42846ED9B009C4927 /* render.metal in Sources */,
+				160BBAA9284529F0009C4927 /* JPVideoDecoder.m in Sources */,
+				1628D2A728119F1100EDE02B /* JPVideoCapture.m in Sources */,
+				1628D2AA28119F4200EDE02B /* JPVideoCaptureConfig.m in Sources */,
+				160BBAC12846ED7A009C4927 /* JPMetalView.m in Sources */,
+				1628D2C32811AFB300EDE02B /* JPMuxerConfig.m in Sources */,
+				160BBAA228452884009C4927 /* JPMP4Demuxer.m in Sources */,
+				160BBA9B284527D2009C4927 /* JPRemuxerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1628D28428119E2F00EDE02B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1628D28D28119E2F00EDE02B /* AVDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1628D28F28119E2F00EDE02B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1628D29828119E2F00EDE02B /* AVDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1628D28A28119E2F00EDE02B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1628D26C28119E2C00EDE02B /* AVDemo */;
+			targetProxy = 1628D28928119E2F00EDE02B /* PBXContainerItemProxy */;
+		};
+		1628D29528119E2F00EDE02B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1628D26C28119E2C00EDE02B /* AVDemo */;
+			targetProxy = 1628D29428119E2F00EDE02B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1628D27928119E2C00EDE02B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1628D27A28119E2C00EDE02B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1628D29A28119E2F00EDE02B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1628D29B28119E2F00EDE02B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1628D29D28119E2F00EDE02B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N92TEW36P2;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = AVDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljp.AVDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1628D29E28119E2F00EDE02B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N92TEW36P2;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = AVDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljp.AVDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1628D2A028119E2F00EDE02B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AVDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LJP.AVDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AVDemo.app/AVDemo";
+			};
+			name = Debug;
+		};
+		1628D2A128119E2F00EDE02B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AVDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LJP.AVDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AVDemo.app/AVDemo";
+			};
+			name = Release;
+		};
+		1628D2A328119E2F00EDE02B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AVDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LJP.AVDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AVDemo;
+			};
+			name = Debug;
+		};
+		1628D2A428119E2F00EDE02B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AVDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LJP.AVDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AVDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1628D26828119E2C00EDE02B /* Build configuration list for PBXProject "AVDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1628D29A28119E2F00EDE02B /* Debug */,
+				1628D29B28119E2F00EDE02B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1628D29C28119E2F00EDE02B /* Build configuration list for PBXNativeTarget "AVDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1628D29D28119E2F00EDE02B /* Debug */,
+				1628D29E28119E2F00EDE02B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1628D29F28119E2F00EDE02B /* Build configuration list for PBXNativeTarget "AVDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1628D2A028119E2F00EDE02B /* Debug */,
+				1628D2A128119E2F00EDE02B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1628D2A228119E2F00EDE02B /* Build configuration list for PBXNativeTarget "AVDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1628D2A328119E2F00EDE02B /* Debug */,
+				1628D2A428119E2F00EDE02B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1628D26528119E2C00EDE02B /* Project object */;
+}
